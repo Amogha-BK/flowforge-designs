@@ -64,6 +64,46 @@ input:not([type=radio]):not([type=checkbox]),select,textarea{background:var(--pa
 .dark-invite .gate{background-color:var(--paper)}
 .dark-invite .eyebrow{color:#c5b58b}.dark-invite .message{color:#eee6d5}
 .flowforge-credit{display:block;text-align:center;margin-top:22px;font:11px Arial,sans-serif;letter-spacing:.4px}
+/* Royal Envelope: the burgundy-and-gold reference design. */
+.reference-invite{--wine:#94713b;--gold:#b79554;--paper:#faf4e5;--ink:#665539;--line:#c6ad7770}
+.reference-invite body{background:#2c1519}
+.reference-invite main{max-width:540px;background:#faf4e5}
+.reference-invite section{position:relative;margin:0;padding:75px 48px;background:var(--paper);border:0;isolation:isolate}
+.reference-invite section:before{content:'';position:absolute;inset:18px;border:1px solid #baa06a;outline:1px solid #d8c49b;outline-offset:5px;pointer-events:none;z-index:-1}
+.reference-invite .hero{min-height:850px;min-height:100svh;display:flex;flex-direction:column;justify-content:center;padding:140px 60px 125px;background:#faf4e5 url('assets/ivory-roses.png') center/100% 100% no-repeat}
+.reference-invite .hero:before{display:none}
+.reference-invite .palace,.reference-invite #blessing,.reference-invite .hero .parents{display:none}
+.reference-invite .hero .eyebrow{font:11px/1.8 Georgia,serif;letter-spacing:1.7px;color:#887448}
+.reference-invite #intro{font-size:12px;text-transform:uppercase;line-height:1.9;max-width:270px;margin:0 auto 12px}
+.reference-invite h1{font:400 clamp(38px,8vw,60px)/1.13 Georgia,serif;color:#ad8b47;margin:22px -15px 15px;overflow-wrap:anywhere}
+.reference-invite .amp{font-size:36px;margin:8px;color:#ad8b47}
+.reference-invite h2{color:#9d7b40;font-size:36px}
+.reference-invite .date-line{font-size:16px;border-block:1px solid #b99a5c;padding:11px 0;margin:8px 0 14px;letter-spacing:1px}
+.reference-invite #city{font-size:14px;margin-bottom:12px}
+.reference-venue{font-size:13px;line-height:1.7;text-transform:uppercase;margin:0 0 20px;overflow-wrap:anywhere}
+.reference-venue strong{display:block;font-weight:400;font-size:16px}.reference-venue span{display:block;font-size:11px}
+.reference-invite .hero .ornament{margin:0 0 16px}
+.reference-invite .hero .btn{align-self:center;background:transparent;color:#8d6b32;border:1px solid #b99a5c;letter-spacing:1.5px;text-transform:uppercase;font-size:10px}
+.reference-invite #opening{background:#2c1519;transition:opacity .55s .95s}
+.reference-invite #opening:before{content:'';position:absolute;inset:0;max-width:540px;margin:auto;background:#431c22 url('assets/burgundy-gold.png') center/100% 100% no-repeat}
+.reference-invite .gate{display:none}
+.reference-invite .seal{position:relative;width:min(78vw,420px);height:min(55vw,285px);background:linear-gradient(160deg,#71383d,#36171d);box-shadow:0 14px 25px #16080bbc,inset 0 0 1px 1px #b0776270;transition:transform 1s .6s,opacity .5s 1s;transform:translateY(20px);isolation:isolate}
+.reference-invite .seal:before{content:'';position:absolute;inset:0;clip-path:polygon(0 0,100% 0,50% 61%);background:linear-gradient(#82474b,#4c252c);filter:drop-shadow(0 5px 2px #17080b);z-index:1;transform-origin:top;transition:transform .8s .15s;backface-visibility:visible}
+.reference-invite .seal:after{content:'';position:absolute;inset:0;background:linear-gradient(33deg,transparent 49.7%,#aa72614d 50%,transparent 50.4%),linear-gradient(-33deg,transparent 49.7%,#aa72614d 50%,transparent 50.4%);pointer-events:none}
+.reference-invite .seal p{display:none}
+.reference-invite .seal p:last-child{display:block;position:absolute;top:calc(100% + 40px);left:0;right:0;letter-spacing:2px;font:10px/1.8 Arial,sans-serif;color:#d7ba7d;text-transform:uppercase}
+.reference-invite .seal #open{position:absolute;left:50%;top:57%;transform:translate(-50%,-50%) rotate(-8deg);width:88px;height:88px;margin:0;border-radius:47% 53% 45% 55% / 52% 44% 56% 48%;background:radial-gradient(ellipse at 35% 25%,#f5d791,#bd8b36 62%,#e6bd68 73%,#8e5c22 83%,#e5b561 91%);border:3px solid #d9b665;box-shadow:0 5px 8px #17080b99,inset 0 0 0 3px #8e6229,inset 0 0 0 5px #edc878;color:#79501f;text-shadow:0 1px #f7da91;font:italic 21px Georgia,serif;z-index:2;transition:opacity .25s,transform .5s}
+.reference-invite .open .seal:before{transform:rotateX(180deg)}
+.reference-invite .open .seal #open{opacity:0;transform:translate(-50%,-50%) scale(.8)}
+.reference-invite .open .seal{opacity:0;transform:translateY(150px);pointer-events:none}
+.reference-invite .event-card,.reference-invite .tile{box-shadow:none;background:transparent}
+.reference-invite #gallery{background:#faf4e5 url('assets/ivory-roses.png') center/100% 100%;padding:110px 55px}
+.reference-invite .photos{display:block}.reference-invite .photos img{height:400px;border:5px double #b89859;border-radius:130px 130px 8px 8px}
+.reference-invite #rsvp{padding:90px 42px;background:linear-gradient(#faf4e5ed,#faf4e5ed),url('assets/ivory-roses.png') center/cover}
+.reference-invite .choice{background:#fffaf080;border-color:#c5ad77}.reference-invite input,.reference-invite select,.reference-invite textarea{font-size:15px}
+.reference-invite nav{background:#faf4e5f5;border-color:#c1a66b;max-width:calc(100% - 24px)}
+.reference-invite footer{background:#faf4e5;color:#7d633b}.reference-invite .flowforge-credit{font-size:10px}
+@media(max-width:420px){.reference-invite section{padding:65px 30px}.reference-invite .hero{padding:125px 45px 100px;min-height:820px}.reference-invite #rsvp{padding:70px 32px}.reference-invite .photos img{height:320px}.reference-invite nav a{padding:16px}.reference-invite h1{font-size:42px}}
 </style>
 </head>
 <body class="locked">
@@ -195,6 +235,18 @@ const date = s => new Date(s).toLocaleDateString('en-IN',{day:'numeric',month:'l
 const time = s => new Date(s).toLocaleTimeString('en-IN',{hour:'numeric',minute:'2-digit',timeZone:'Asia/Kolkata'});
 const validPhone = s => /^[1-9]\d{7,14}$/.test(s);
 const text = (id,value) => {$(id).textContent=value;};
+
+if(personalized?.design==='royal-envelope'||new URLSearchParams(location.search).get('template')==='royal-envelope'){
+ document.documentElement.classList.add('reference-invite');
+ const venue=document.createElement('p');venue.className='reference-venue';
+ const label=document.createElement('span');label.textContent='Venue';
+ const name=document.createElement('strong');name.textContent=WEDDING.events[0].venue;
+ const address=document.createElement('span');address.textContent=WEDDING.events[0].address;
+ venue.append(label,name,address);$('city').after(venue);
+ $('welcome').textContent='Together with our families';
+ document.querySelector('.hero .btn').textContent='RSVP · Celebrate with us';
+ WEDDING.photos=['assets/wedding.jpg'];
+}
 document.title = `${WEDDING.bride} & ${WEDDING.groom} | Wedding Invitation`;
 text('open',WEDDING.initials);text('bride',WEDDING.bride);text('groom',WEDDING.groom);
 text('blessing',WEDDING.blessing);document.querySelector('.seal p').textContent='WITH LOVE & BLESSINGS';text('intro',WEDDING.invitation);

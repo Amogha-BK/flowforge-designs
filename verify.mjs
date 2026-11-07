@@ -6,7 +6,7 @@ const page=await browser.newPage({viewport:{width:1440,height:1000}});
 const errors=[];page.on('pageerror',e=>errors.push(e.message));
 await page.goto('http://localhost:3000');
 await page.waitForSelector('.template-card');
-assert.equal(await page.locator('.template-card').count(),9);
+assert.equal(await page.locator('.template-card').count(),10);
 await page.locator('[data-filter="Floral"]').click();assert.equal(await page.locator('.template-card').count(),3);
 await page.locator('.save').first().click();await page.locator('[data-filter="saved"]').click();assert.equal(await page.locator('.template-card').count(),1);
 await page.locator('[data-filter="All"]').click();
@@ -31,5 +31,5 @@ const exportPage=await browser.newPage();await exportPage.goto(new URL('./test-r
 await page.locator('#builder-dialog .close').click();await page.setViewportSize({width:390,height:844});await page.screenshot({path:'test-results/mobile.png',fullPage:true});
 assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'Mobile page must not overflow horizontally');
 for(const width of [320,768]){await page.setViewportSize({width,height:900});assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),`No overflow at ${width}px`);}
-assert.deepEqual(errors,[]);console.log('PASS: 9 designs, filters, saved favourites, personalization, Unicode and HTML escaping, shared links, RSVP WhatsApp destination, calendar, standalone export, and responsive widths.');
+assert.deepEqual(errors,[]);console.log('PASS: 10 designs, filters, saved favourites, personalization, Unicode and HTML escaping, shared links, RSVP WhatsApp destination, calendar, standalone export, and responsive widths.');
 await browser.close();
