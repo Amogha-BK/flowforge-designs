@@ -1,6 +1,6 @@
 # FlowForge.designs
 
-Wedding template gallery with nine designs priced at ₹699, personalized invitations, WhatsApp RSVP, saved favourites, browser drafts, shareable links and standalone HTML export.
+Wedding template gallery with ten designs priced at ₹699, personalized invitations, WhatsApp RSVP, saved favourites, browser drafts, shareable links and standalone HTML export.
 
 ## Run locally
 
@@ -31,3 +31,9 @@ The original workspace `index.html` is preserved. The live site uses `dist/`.
 ## Verification
 
 `npm run check` checks JavaScript syntax. For the browser smoke test, run `npm install`, start the local server, then run `npm test`. The test uses Google Chrome at its standard Windows installation path; update `verify.mjs` if your browser is installed elsewhere.
+
+## Royal Envelope RSVP
+
+The Royal Envelope template recreates the supplied video?s burgundy floral envelope, animated gold wax seal, ivory rose stationery and gold invitation typography. Choose it in the gallery to personalize names, date, venue and the host WhatsApp number. Direct sample: `/invitation.html?template=royal-envelope`. Export embeds the artwork for offline use.
+
+Run `node verify-reference.mjs` with the local server running to check the new design, RSVP acceptance and decline, mobile widths, and offline export.

@@ -1,0 +1,40 @@
+import {chromium} from 'playwright';
+import assert from 'node:assert/strict';
+import {readFile} from 'node:fs/promises';
+const browser=await chromium.launch({executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe',headless:true});
+try{
+ const page=await browser.newPage({viewport:{width:390,height:844}});
+ const errors=[];page.on('pageerror',e=>errors.push(e.message));
+ await page.goto('http://127.0.0.1:3000');
+ await page.locator('[data-preview="royal-envelope"]').click();
+ const preview=page.frameLocator('#preview-frame');
+ await preview.locator('html.reference-invite').waitFor();
+ await preview.locator('#open').click();
+ await preview.locator('#opening[hidden]').waitFor({state:'attached'});
+ await page.locator('#preview-dialog .close').click();
+ await page.locator('[data-create="royal-envelope"]').click();
+ for(const [key,value]of Object.entries({bride:'Ananya',groom:'Vikram',date:'2027-02-13',time:'18:00',city:'Jaipur',venue:'The Royal Palace',address:'Civil Lines, Jaipur',phone:'919876543210'}))await page.locator(`[name="${key}"]`).fill(value);
+ await page.getByRole('button',{name:'Save & create my invitation'}).click();
+ const link=await page.locator('#share-url').inputValue();
+ const invitation=await browser.newPage({viewport:{width:390,height:844}});
+ invitation.on('pageerror',e=>errors.push(e.message));await invitation.goto(link);
+ await invitation.screenshot({path:'test-results/royal-envelope-closed.png'});
+ await invitation.locator('#open').click();await invitation.locator('#opening[hidden]').waitFor({state:'attached'});
+ assert.equal(await invitation.locator('.reference-venue strong').textContent(),'The Royal Palace');
+ assert.equal(await invitation.locator('#bride').textContent(),'Ananya');
+ await invitation.screenshot({path:'test-results/royal-envelope-open.png'});
+ await invitation.locator('#guest').fill('Wedding Guest');await invitation.locator('#phone').fill('9876543210');
+ await invitation.locator('[name="attending"][value="no"]').check();await invitation.locator('[type="submit"]').click();
+ assert.match(await invitation.locator('#send').getAttribute('href'),/^https:\/\/wa.me\/919876543210\?text=/);
+ assert.ok((await invitation.locator('#message').textContent()).includes('Sends love from afar'));
+ await invitation.locator('[name="attending"][value="yes"]').check();
+ assert.equal(await invitation.locator('#reply').isHidden(),true);
+ await invitation.locator('[name="event"]').first().check();await invitation.locator('[type="submit"]').click();
+ assert.ok((await invitation.locator('#message').textContent()).includes('The Wedding'));
+ for(const width of [320,390,768,1440]){await invitation.setViewportSize({width,height:900});assert.ok(await invitation.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),`No overflow at ${width}px`);}
+ const pending=page.waitForEvent('download');await page.locator('#download').click();await(await pending).saveAs('test-results/royal-envelope-export.html');
+ const html=await readFile('test-results/royal-envelope-export.html','utf8');assert.ok(html.includes('data:image/png;base64,'));assert.ok(!html.includes("url('assets/"));
+ const exported=await browser.newPage();await exported.goto(new URL('./test-results/royal-envelope-export.html',import.meta.url).href);await exported.locator('html.reference-invite').waitFor();assert.equal(await exported.locator('#bride').textContent(),'Ananya');
+ assert.deepEqual(errors,[]);
+ console.log('PASS: reference template preview, animated opening, personalization, venue, accept/decline RSVP, WhatsApp host, responsive layout, and embedded-artwork offline export.');
+}finally{await browser.close();}
