@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Aarav & Meera | Wedding Invitation</title>
+<meta name="description" content="Join Aarav and Meera for their wedding celebrations in Jaipur.">
+<meta name="theme-color" content="#732c39">
+<style>
+:root{--wine:#732c39;--gold:#aa8545;--paper:#fbf6eb;--ink:#45382f;--line:#dbc9a7}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:30px}
+body{margin:0;background:#eee5d7;color:var(--ink);font:17px/1.7 Georgia,serif}
+body.locked{overflow:hidden}button,input,select,textarea{font:inherit}
+button,a,input,select,textarea{-webkit-tap-highlight-color:transparent}
+button,a{touch-action:manipulation}button{cursor:pointer}
+button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--wine);outline-offset:4px}
+a{color:var(--wine)}[hidden]{display:none!important}
+main{max-width:780px;margin:auto;background:var(--paper);box-shadow:0 0 80px #45382f12}
+section{padding:70px 34px;text-align:center;border-bottom:1px solid var(--line)}
+h1,h2,h3,p{margin:0 0 18px}h1{font-size:clamp(48px,10vw,78px);line-height:1.05;font-weight:400;color:var(--wine)}
+h2{font-size:36px;font-weight:400;color:var(--wine)}h3{font-size:27px;font-weight:400}
+.eyebrow{font:11px/1.8 Arial,sans-serif;letter-spacing:3px;text-transform:uppercase;color:#80652f}
+.ornament{font-size:26px;color:var(--gold);margin:15px 0}.muted{font-size:15px;color:#6d6257}
+.btn{display:inline-block;padding:11px 22px;border:1px solid var(--gold);background:transparent;color:var(--wine);text-decoration:none;border-radius:3px;font:13px/1.6 Arial,sans-serif}
+.primary{background:var(--wine);border-color:var(--wine);color:white}.actions{display:flex;gap:12px;flex-wrap:wrap;justify-content:center}
+.hero{position:relative;padding-top:55px;background:radial-gradient(ellipse at top,#e5c9923d,transparent 65%)}
+.hero:before{content:"";position:absolute;inset:16px;border:1px solid var(--line);border-radius:160px 160px 0 0;pointer-events:none}
+.palace{width:min(330px,90%);height:160px;display:block;margin:12px auto 22px;color:var(--gold)}
+.amp{display:block;font-size:34px;font-style:italic;color:var(--gold);margin:14px}.parents{max-width:470px;margin:28px auto;font-size:15px}
+.date-line{letter-spacing:2px;font-size:17px}.countdown{display:flex;justify-content:center;gap:0;margin:28px auto}
+.countdown div{flex:1;max-width:110px;border-right:1px solid var(--line)}.countdown div:last-child{border:0}
+.countdown b{display:block;color:var(--wine);font-size:35px;font-weight:400}.countdown span{font:10px Arial,sans-serif;letter-spacing:1px}
+.event-tabs{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:26px 0}
+.event-tabs button[aria-pressed="true"]{background:var(--wine);color:white;border-color:var(--wine)}
+.event-card{border:1px solid var(--line);padding:30px 22px;background:#fffaf3;box-shadow:6px 6px 0 #e8dcc4}
+.event-card .badge{font-size:34px;color:var(--gold)}.event-card hr{border:0;border-top:1px solid var(--line);width:60px;margin:24px auto}
+.timeline{list-style:none;text-align:left;max-width:340px;padding:0;margin:25px auto}.timeline li{padding:8px 0;border-bottom:1px dotted var(--line)}
+.timeline time{display:inline-block;min-width:95px;color:var(--wine)}
+.tiles{display:grid;grid-template-columns:1fr 1fr;gap:15px}.tile{border:1px solid var(--line);padding:20px;font-size:15px}
+.photos{display:grid;grid-template-columns:1fr 1fr;gap:12px}.photos img{width:100%;height:260px;object-fit:cover;border-radius:130px 130px 4px 4px}
+form{text-align:left;max-width:500px;margin:30px auto 0}label,legend{font-size:15px}fieldset{border:0;padding:0;margin:0 0 20px}
+input:not([type=radio]):not([type=checkbox]),select,textarea{width:100%;padding:12px;margin:7px 0 20px;background:#fffdf8;border:1px solid var(--line);color:var(--ink);border-radius:3px}
+textarea{min-height:95px;resize:vertical}input[type=radio],input[type=checkbox]{accent-color:var(--wine)}
+.choice{display:block;border:1px solid var(--line);padding:12px;margin-top:8px}.row{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.message{white-space:pre-wrap;overflow-wrap:anywhere;background:#eee4d2;padding:20px;font-size:14px;max-height:320px;overflow:auto}
+#reply{margin-top:25px;text-align:left}#status{font-size:14px;margin-top:15px}.error{color:#9d2338}
+nav{position:fixed;bottom:max(16px,env(safe-area-inset-bottom));left:50%;transform:translateX(-50%);display:flex;border:1px solid var(--line);background:#fffaf3f5;border-radius:40px;box-shadow:0 4px 25px #45382f22;z-index:10}
+nav a{font:11px Arial,sans-serif;letter-spacing:1px;text-decoration:none;padding:17px 20px;color:var(--wine)}
+footer{text-align:center;padding:45px 20px 110px;font-size:14px}footer strong{font-size:27px;font-weight:400;color:var(--wine)}
+#opening{position:fixed;inset:0;z-index:100;display:grid;place-items:center;overflow:hidden;background:var(--paper);perspective:1200px}
+.gate{position:absolute;top:0;bottom:0;width:50%;background-color:var(--wine);background-image:repeating-linear-gradient(90deg,transparent 0 42px,#d5b47714 43px 44px);border:8px double #c6a361;transition:transform 1.3s ease-in-out}
+.gate:after{content:"";position:absolute;inset:30px 20px;border:1px solid #d2b57588;border-radius:180px 180px 0 0}
+.left{left:0;transform-origin:left}.right{right:0;transform-origin:right}
+.open .left{transform:rotateY(-105deg)}.open .right{transform:rotateY(105deg)}
+.seal{text-align:center;z-index:1;color:#f9e8c5;transition:opacity .4s}.seal p{font-size:13px;letter-spacing:3px}.seal .btn{background:#f8ecd3;border:4px double var(--gold);border-radius:50%;width:120px;height:120px;color:var(--wine);font:italic 30px Georgia,serif;margin:20px}
+.open .seal{opacity:0;pointer-events:none}#music{position:fixed;top:15px;right:15px;z-index:20;background:var(--paper)}
+@media(max-width:480px){section{padding:55px 24px}h2{font-size:30px}.tiles{grid-template-columns:1fr}.photos img{height:190px}.gate:after{inset:22px 12px}.row{gap:12px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
+
+.event-card,.tile{background:color-mix(in srgb,var(--paper),white 5%)}
+input:not([type=radio]):not([type=checkbox]),select,textarea{background:var(--paper);color:var(--ink)}
+.message{background:color-mix(in srgb,var(--paper),black 8%)}
+.dark-invite .muted{color:#c0b9a7}.dark-invite nav,.dark-invite #music{background:var(--paper)}
+.dark-invite .gate{background-color:var(--paper)}
+.dark-invite .eyebrow{color:#c5b58b}.dark-invite .message{color:#eee6d5}
+.flowforge-credit{display:block;text-align:center;margin-top:22px;font:11px Arial,sans-serif;letter-spacing:.4px}
+</style>
+</head>
+<body class="locked">
+<svg width="0" height="0" aria-hidden="true" style="position:absolute"><defs>
+<symbol id="palace" viewBox="0 0 400 180"><g fill="none" stroke="currentColor" stroke-width="1.5">
+<path d="M10 165H390M45 165V80H100V165M300 165V80H355V165M100 165V65H300V165M145 165V80Q200 0 255 80V165M175 165V108Q200 70 225 108V165M30 80Q72 25 115 80ZM285 80Q328 25 370 80ZM140 65Q200-15 260 65M72 48V28M328 48V28M200 24V6"/>
+<path d="M54 110Q72 80 90 110V143H54ZM310 110Q328 80 346 110V143H310ZM115 95H132V140H115ZM268 95H285V140H268Z"/>
+<path d="M120 30Q140 45 160 30M240 30Q260 45 280 30M15 175H385"/><circle cx="200" cy="5" r="3"/>
+</g></symbol></defs></svg>
+<div id="opening" role="dialog" aria-modal="true" aria-label="Open wedding invitation">
+ <div class="gate left" aria-hidden="true"></div><div class="gate right" aria-hidden="true"></div>
+ <div class="seal"><p>॥ शुभ विवाह ॥</p><button id="open" class="btn" aria-label="Open the invitation"></button><p>A CELEBRATION OF LOVE</p><p>Tap the seal to enter</p></div>
+</div>
+<main id="invitation" inert>
+ <section class="hero" id="home">
+  <p id="blessing"></p><svg class="palace" aria-hidden="true"><use href="#palace"/></svg>
+  <p class="eyebrow" id="welcome"></p><p class="muted" id="intro"></p>
+  <h1><span id="bride"></span><span class="amp">&</span><span id="groom"></span></h1>
+  <div class="parents" id="families"></div><p class="eyebrow">Are getting married</p>
+  <p class="date-line" id="date"></p><p id="city"></p><div class="ornament" aria-hidden="true">❧</div>
+  <a class="btn primary" href="#rsvp">Celebrate with us</a>
+ </section>
+ <section><p class="eyebrow">A lifetime together begins in</p><div id="countdown" class="countdown" aria-label="Wedding countdown"></div><p class="muted" id="hashtag"></p></section>
+ <section id="story"><p class="eyebrow">Two hearts. Two families.</p><h2>Our story</h2><p id="storyText"></p></section>
+ <section id="gallery" hidden><p class="eyebrow">Little moments, forever memories</p><h2>Better together</h2><div id="photos" class="photos"></div></section>
+ <section id="events"><p class="eyebrow">Come for the rituals. Stay for the memories.</p><h2>The celebrations</h2><p class="muted">Choose a celebration to see its details.</p><div id="eventTabs" class="event-tabs" aria-label="Celebrations"></div><article id="eventCard" class="event-card" aria-live="polite"></article></section>
+ <section id="stay"><p class="eyebrow">Make yourself at home</p><h2>Travel & stay</h2><div class="tiles"><div class="tile"><h3>Stay with us</h3><p id="stayText"></p></div><div class="tile"><h3>Getting here</h3><p id="travelText"></p></div></div><p class="muted" id="contact" style="margin-top:25px"></p></section>
+ <section><div class="ornament" aria-hidden="true">❧</div><h2>Your presence is our present</h2><p id="gifts"></p></section>
+ <section id="rsvp"><p class="eyebrow">The celebration is incomplete without you</p><h2>Will you join us?</h2><p id="deadline"></p>
+ <form id="rsvpForm">
+  <label for="guest">Your full name *</label><input id="guest" name="guest" autocomplete="name" maxlength="100" required placeholder="e.g. Rohan Sharma">
+  <label for="phone">Phone / WhatsApp number *</label><input id="phone" name="phone" type="tel" autocomplete="tel" minlength="7" maxlength="22" required placeholder="e.g. +91 98765 43210">
+  <fieldset><legend>Will you be attending? *</legend><label class="choice"><input type="radio" name="attending" value="yes" required> Joyfully accepts</label><label class="choice"><input type="radio" name="attending" value="no"> Sends love from afar</label></fieldset>
+  <div id="attendance" hidden>
+   <fieldset id="eventChoices"><legend>Which celebrations will you attend? *</legend></fieldset>
+   <div class="row"><div><label for="guests">Total guests, including you *</label><input type="number" id="guests" name="guests" min="1" max="10" value="1"></div><div><label for="children">Children included</label><input type="number" id="children" name="children" min="0" max="10" value="0"></div></div>
+   <label for="meal">Meal preference</label><select id="meal" name="meal"><option>Vegetarian</option><option>Jain</option><option>Mixed / specify in message</option></select>
+   <label for="rooms">Need help with accommodation?</label><select id="rooms" name="rooms"><option>No</option><option>Yes</option><option>Not sure yet</option></select>
+  </div>
+  <label for="note">A message, blessing or dietary request</label><textarea id="note" name="note" maxlength="600" placeholder="Leave a little love for the couple…"></textarea>
+  <p class="muted">Your reply will be prepared for the wedding host on WhatsApp. Review it, open WhatsApp, then press Send.</p>
+  <button class="btn primary" type="submit">Prepare my RSVP</button>
+  <p id="status" role="status"></p>
+ </form>
+ <div id="reply" hidden><h3>Your RSVP message</h3><pre class="message" id="message"></pre><a id="send" class="btn primary" target="_blank" rel="noopener noreferrer" hidden>Open WhatsApp to send</a><p class="muted" id="replyHint"></p></div>
+ </section>
+ <footer><p>With love and warm wishes</p><strong id="signoff"></strong><p id="footerFamilies"></p><a class="flowforge-credit" href="https://flowforge-wedding-designs.localsmile1.chatgpt.site">Made with love · FlowForge.designs ↗</a></footer>
+</main>
+<nav id="nav" aria-label="Invitation navigation" hidden><a href="#home">HOME</a><a href="#events">EVENTS</a><a href="#stay">STAY</a><a href="#rsvp">RSVP</a></nav>
+<button id="music" class="btn" hidden aria-pressed="false">Play music</button>
+<audio id="audio" loop preload="none"></audio>
+<noscript>Please enable JavaScript to open this interactive invitation.</noscript>
+<script>
+/* EDIT CUSTOMER DETAILS HERE. All names, venues and schedules below are fictional.
+   Keep +05:30 in dates for Indian Standard Time.
+   RSVP phone: country code + number, digits only, e.g. 91 followed by 10 digits.
+   Leave it blank to preview without sending. No API keys are needed.
+   Optional assets: add files in assets/ and enter their relative paths below. */
+const WEDDING = {
+ bride: 'Meera Sharma', groom: 'Aarav Mehta', initials: 'M & A',
+ brideParents: 'Smt. Sunita & Shri Rajesh Sharma',
+ groomParents: 'Smt. Kavita & Shri Sanjay Mehta',
+ familyNames: 'The Sharma & Mehta Families',
+ blessing: '॥ श्री गणेशाय नमः ॥',
+ invitation: 'Together with our families, we invite you to celebrate our wedding.',
+ city: 'Jaipur, Rajasthan', hashtag: '#MeeraFoundAarav',
+ weddingDate: '2027-02-13T18:00:00+05:30', replyBy: '2027-01-25T23:59:00+05:30',
+ story: 'What began as a simple hello grew into a friendship, countless conversations, and a promise of forever. With our families by our side, we are ready to begin our next chapter. We would love you to be part of it.',
+ gifts: 'Your presence and blessings are the most precious gifts. Please come with your love and leave the presents behind.',
+ stay: 'Guest rooms are being coordinated at Gulmohar Haveli, Jaipur. Check-in: 12 February, 12 noon. Check-out: 14 February, 11 AM. Please tell us in your RSVP if you need a room.',
+ travel: 'Jaipur International Airport and Jaipur Junction are the arrival points. Please share your arrival details with the family so we can help plan your transfer.',
+ contactName: 'Riya — Family coordinator',
+ contactPhone: '', // Add an actual coordinator number; blank hides the call link.
+ rsvpWhatsApp: '', // REQUIRED before launch: actual host number, e.g. 91XXXXXXXXXX.
+ maxGuests: 10,
+ music: '', // Optional: assets/wedding-music.mp3 (use music you have permission to use).
+ photos: [], // Optional: ['assets/couple-1.jpg', 'assets/couple-2.jpg'].
+ events: [
+  {name:'Haldi',start:'2027-02-12T10:30:00+05:30',end:'2027-02-12T12:30:00+05:30',venue:'Gulmohar Haveli — Courtyard',address:'Civil Lines, Jaipur, Rajasthan',map:'',dress:'Shades of yellow',description:'A little haldi, a lot of laughter, and the people we love.',schedule:[['10:30 AM','Haldi ceremony'],['12:00 PM','Family lunch']]},
+  {name:'Mehendi & Sangeet',start:'2027-02-12T18:00:00+05:30',end:'2027-02-12T23:00:00+05:30',venue:'Gulmohar Haveli — Garden',address:'Civil Lines, Jaipur, Rajasthan',map:'',dress:'Colourful Indian festive wear',description:'Henna, family performances, and a dance floor waiting for you.',schedule:[['6:00 PM','Mehendi & welcome drinks'],['8:00 PM','Sangeet performances'],['9:00 PM','Dinner']]},
+  {name:'Shubh Vivaah',start:'2027-02-13T16:00:00+05:30',end:'2027-02-13T20:00:00+05:30',venue:'Gulmohar Haveli — Mandap Lawn',address:'Civil Lines, Jaipur, Rajasthan',map:'',dress:'Traditional Indian attire',description:'Join us as we take our seven vows, surrounded by love and blessings.',schedule:[['4:00 PM','Baraat welcome'],['5:00 PM','Varmala'],['6:00 PM','Pheras & wedding muhurat']]},
+  {name:'Reception',start:'2027-02-13T20:30:00+05:30',end:'2027-02-13T23:30:00+05:30',venue:'Gulmohar Haveli — Durbar Hall',address:'Civil Lines, Jaipur, Rajasthan',map:'',dress:'Indian formal / evening wear',description:'An evening of good food, warm wishes, and a beautiful new beginning.',schedule:[['8:30 PM','Welcome the newlyweds'],['9:00 PM','Dinner & celebrations']]}
+ ]
+};
+
+// Exported invitations embed their data here; shared invitations read the URL fragment.
+const EMBEDDED_CONFIG = /* PERSONALIZED_CONFIG */ null;
+let personalized = EMBEDDED_CONFIG;
+if (!personalized && location.hash.length > 1 && location.hash.length < 30000) {
+ try {
+  const packed = location.hash.slice(1).replace(/-/g,'+').replace(/_/g,'/');
+  personalized = JSON.parse(new TextDecoder('utf-8',{fatal:true}).decode(Uint8Array.from(atob(packed),c=>c.charCodeAt(0))));
+ } catch { document.addEventListener('DOMContentLoaded',()=>{const p=document.createElement('p');p.textContent='This invitation link is incomplete. Showing a sample invitation; please ask the couple for their latest link.';p.style.cssText='position:fixed;top:0;left:0;right:0;z-index:200;background:#fff4d4;padding:12px;text-align:center;font:13px Arial;color:#732c39';document.body.append(p);}); }
+}
+if (personalized && typeof personalized === 'object' && !Array.isArray(personalized)) {
+ const str=(key,max=120)=>typeof personalized[key]==='string'?personalized[key].slice(0,max).trim():'';
+ if (/^#[0-9a-f]{6}$/i.test(str('accent'))) document.documentElement.style.setProperty('--wine',str('accent'));
+ if (/^#[0-9a-f]{6}$/i.test(str('paper'))) {
+  const paper=str('paper');document.documentElement.style.setProperty('--paper',paper);
+  const rgb=paper.slice(1).match(/../g).map(x=>parseInt(x,16));
+  if(rgb.reduce((a,b)=>a+b,0)<390){document.documentElement.style.setProperty('--ink','#eee6d5');document.documentElement.style.setProperty('--line','#ac97605c');document.documentElement.classList.add('dark-invite');}
+ }
+ if(str('bride')&&str('groom')) {
+  WEDDING.bride=str('bride',60);WEDDING.groom=str('groom',60);
+  WEDDING.initials=WEDDING.bride.charAt(0)+' & '+WEDDING.groom.charAt(0);
+  WEDDING.brideParents='her loving family';WEDDING.groomParents='his loving family';
+  WEDDING.familyNames='Together with our families';
+  WEDDING.blessing='With love, joy and the blessings of our families';
+  WEDDING.city=str('city',80);WEDDING.hashtag='#'+WEDDING.bride.split(' ')[0]+'And'+WEDDING.groom.split(' ')[0];
+  WEDDING.story=str('story',1200)||'Our favourite chapter is about to begin. With full hearts and our families by our side, we invite you to join us as we celebrate our wedding.';
+  const number=str('phone',25).replace(/\D/g,'');
+  if(/^[1-9]\d{7,14}$/.test(number)){WEDDING.rsvpWhatsApp=number;WEDDING.contactPhone=number;}
+  WEDDING.contactName='The wedding hosts';WEDDING.stay='Please contact the hosts for accommodation recommendations and room availability.';
+  WEDDING.travel='Please use the location links below for directions to the wedding venue. Contact the hosts if you need help planning your arrival.';
+  const date=str('date',10), time=str('time',5);
+  if(/^\d{4}-\d{2}-\d{2}$/.test(date)&&/^\d{2}:\d{2}$/.test(time)&&Number.isFinite(new Date(date+'T'+time+':00+05:30').getTime())){
+   WEDDING.weddingDate=date+'T'+time+':00+05:30';
+   WEDDING.replyBy=new Date(new Date(WEDDING.weddingDate).getTime()-7*86400000).toISOString();
+   const receptionStart=new Date(new Date(WEDDING.weddingDate).getTime()+2.5*3600000).toISOString();
+   const event=(name,start,duration,dress,description)=>({name,start,end:new Date(new Date(start).getTime()+duration*3600000).toISOString(),venue:str('venue',120),address:str('address',200),map:'',dress,description,schedule:[]});
+   WEDDING.events=[event('The Wedding',WEDDING.weddingDate,2,'Celebration attire','Join us as we begin our forever, surrounded by the people we love.'),event('Reception',receptionStart,3,'Evening celebration wear','Celebrate the newlyweds with dinner, warm wishes and an evening to remember.')];
+  }
+ }
+}
+
+const $ = id => document.getElementById(id);
+const esc = s => String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const date = s => new Date(s).toLocaleDateString('en-IN',{day:'numeric',month:'long',year:'numeric',timeZone:'Asia/Kolkata'});
+const time = s => new Date(s).toLocaleTimeString('en-IN',{hour:'numeric',minute:'2-digit',timeZone:'Asia/Kolkata'});
+const validPhone = s => /^[1-9]\d{7,14}$/.test(s);
+const text = (id,value) => {$(id).textContent=value;};
+document.title = `${WEDDING.bride} & ${WEDDING.groom} | Wedding Invitation`;
+text('open',WEDDING.initials);text('bride',WEDDING.bride);text('groom',WEDDING.groom);
+text('blessing',WEDDING.blessing);document.querySelector('.seal p').textContent='WITH LOVE & BLESSINGS';text('intro',WEDDING.invitation);
+const invited = new URLSearchParams(location.search).get('to');
+text('welcome',invited ? `Dear ${invited.slice(0,100)}, you are invited` : 'An invitation, with love');
+$('families').textContent='Together with our families, we invite you to join our celebration.';
+text('date',date(WEDDING.weddingDate));text('city',WEDDING.city);text('hashtag',WEDDING.hashtag);
+text('storyText',WEDDING.story);text('stayText',WEDDING.stay);text('travelText',WEDDING.travel);text('gifts',WEDDING.gifts);
+text('deadline',`Kindly reply by ${date(WEDDING.replyBy)}`);
+text('signoff',`${WEDDING.bride} & ${WEDDING.groom}`);text('footerFamilies',WEDDING.familyNames);
+text('contact',`For assistance: ${WEDDING.contactName}`);
+if(validPhone(WEDDING.contactPhone)){$('contact').innerHTML+=` · <a href="tel:+${WEDDING.contactPhone}">Call the family</a>`;}
+if(WEDDING.photos.length){$('gallery').hidden=false;$('photos').innerHTML=WEDDING.photos.map((src,i)=>`<img src="${esc(src)}" alt="${esc(WEDDING.bride)} and ${esc(WEDDING.groom)}, memory ${i+1}" loading="lazy">`).join('');}
+const audio=$('audio');if(WEDDING.music){audio.src=WEDDING.music;}
+async function playMusic(){try{await audio.play();text('music','Pause music');$('music').setAttribute('aria-pressed','true');}catch{text('music','Play music');$('music').setAttribute('aria-pressed','false');}}
+$('music').onclick=()=>{if(audio.paused)playMusic();else{audio.pause();text('music','Play music');$('music').setAttribute('aria-pressed','false');}};
+$('open').onclick=()=>{
+ $('opening').classList.add('open');$('open').disabled=true;
+ if(WEDDING.music){$('music').hidden=false;playMusic();}
+ setTimeout(()=>{$('opening').hidden=true;$('invitation').inert=false;$('nav').hidden=false;document.body.classList.remove('locked');$('bride').parentElement.tabIndex=-1;$('bride').parentElement.focus();},matchMedia('(prefers-reduced-motion: reduce)').matches?0:1350);
+};
+function tick(){let s=Math.max(0,Math.floor((new Date(WEDDING.weddingDate)-Date.now())/1000));const values=[Math.floor(s/86400),Math.floor(s/3600)%24,Math.floor(s/60)%60,s%60];$('countdown').innerHTML=values.map((v,i)=>`<div><b>${String(v).padStart(2,'0')}</b><span>${['DAYS','HOURS','MINS','SECS'][i]}</span></div>`).join('');}
+tick();setInterval(tick,1000);
+function showEvent(i){
+ const e=WEDDING.events[i];document.querySelectorAll('#eventTabs button').forEach((b,j)=>b.setAttribute('aria-pressed',String(i===j)));
+ const maps=e.map || `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(e.venue+', '+e.address)}`;
+ $('eventCard').innerHTML=`<div class="badge" aria-hidden="true">❧</div><p class="eyebrow">Celebration ${i+1}</p><h3>${esc(e.name)}</h3><p>${date(e.start)}<br>${time(e.start)} IST onwards</p><p>${esc(e.description)}</p><hr><p><strong>${esc(e.venue)}</strong><br>${esc(e.address)}</p><p class="muted">Dress code: ${esc(e.dress)}</p><ul class="timeline">${e.schedule.map(([t,s])=>`<li><time>${esc(t)}</time> ${esc(s)}</li>`).join('')}</ul><div class="actions"><a class="btn" href="${esc(maps)}" target="_blank" rel="noopener noreferrer">View location</a><button class="btn" id="calendar">Add to calendar</button></div>`;
+ $('calendar').onclick=()=>downloadCalendar(e,i);
+}
+WEDDING.events.forEach((e,i)=>{
+ const b=document.createElement('button');b.className='btn';b.textContent=e.name;b.onclick=()=>showEvent(i);$('eventTabs').append(b);
+ $('eventChoices').insertAdjacentHTML('beforeend',`<label class="choice"><input type="checkbox" name="event" value="${i}"> ${esc(e.name)}</label>`);
+});showEvent(0);
+function downloadCalendar(e,i){
+ const utc=s=>new Date(s).toISOString().replace(/[-:]/g,'').slice(0,15)+'Z';
+ const clean=s=>String(s).replace(/\\/g,'\\\\').replace(/\n/g,'\\n').replace(/,/g,'\\,').replace(/;/g,'\\;').replace(/\r/g,'');
+ const lines=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//FlowForge.designs//Wedding//EN','BEGIN:VEVENT',`UID:${new Date(e.start).getTime()}-${i}-${encodeURIComponent(WEDDING.initials)}@shubhmilan.example`,`DTSTAMP:${utc(new Date())}`,`DTSTART:${utc(e.start)}`,`DTEND:${utc(e.end)}`,`SUMMARY:${clean(e.name+' — '+WEDDING.bride+' & '+WEDDING.groom)}`,`LOCATION:${clean(e.venue+', '+e.address)}`,'END:VEVENT','END:VCALENDAR'];
+ const encoder=new TextEncoder();const folded=lines.map(line=>{let out='',part='';for(const c of line){if(encoder.encode(part+c).length>73){out+=part+'\r\n';part=' ';}part+=c;}return out+part;}).join('\r\n')+'\r\n';
+ const url=URL.createObjectURL(new Blob([folded],{type:'text/calendar;charset=utf-8'}));const a=document.createElement('a');a.href=url;a.download=`celebration-${i+1}.ics`;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
+}
+$('guests').max=WEDDING.maxGuests;$('children').max=WEDDING.maxGuests;
+const form=$('rsvpForm');
+function invalidateReply(){$('reply').hidden=true;text('status','');}
+form.addEventListener('input',invalidateReply);
+form.addEventListener('change',()=>{
+ const yes=new FormData(form).get('attending')==='yes';$('attendance').hidden=!yes;
+ $('attendance').querySelectorAll('input,select').forEach(el=>el.disabled=!yes);
+ $('guests').required=yes;$('children').required=yes;invalidateReply();
+});
+$('attendance').querySelectorAll('input,select').forEach(el=>el.disabled=true);
+form.onsubmit=event=>{
+ event.preventDefault();const data=new FormData(form);const yes=data.get('attending')==='yes';
+ const chosen=data.getAll('event').map(Number);text('status','');
+ if(!String(data.get('guest')).trim()){text('status','Please enter your name.');$('guest').focus();return;}
+ const guestPhone=String(data.get('phone'));
+ if(!/^[+\d ()-]+$/.test(guestPhone)||!/^\d{7,15}$/.test(guestPhone.replace(/\D/g,''))){text('status','Please enter a valid phone number with 7–15 digits.');$('phone').focus();return;}
+ if(yes&&!chosen.length){text('status','Please select at least one celebration.');$('eventChoices input').focus();return;}
+ if(yes&&Number(data.get('children'))>Number(data.get('guests'))){text('status','Children cannot exceed the total number of guests.');$('children').focus();return;}
+ const message=[`Wedding RSVP: ${WEDDING.bride} & ${WEDDING.groom}`,`Name: ${String(data.get('guest')).trim()}`,`Phone: ${data.get('phone')}`,`Reply: ${yes?'Joyfully accepts':'Sends love from afar'}`,...(yes?[`Celebrations: ${chosen.map(i=>WEDDING.events[i].name).join(', ')}`,`Total guests (including children): ${data.get('guests')}`,`Children: ${data.get('children')}`,`Meal preference: ${data.get('meal')}`,`Accommodation help: ${data.get('rooms')}`]:[]),`Message: ${data.get('note')||'With love and blessings.'}`].join('\n');
+ text('message',message);$('reply').hidden=false;
+ if(validPhone(WEDDING.rsvpWhatsApp)){$('send').href=`https://wa.me/${WEDDING.rsvpWhatsApp}?text=${encodeURIComponent(message)}`;$('send').hidden=false;text('replyHint','Your RSVP has not been sent yet. Open WhatsApp and press Send to deliver it to the host.');}
+ else{$('send').hidden=true;$('send').removeAttribute('href');text('replyHint','Sample preview only. Add the host’s WhatsApp number in WEDDING.rsvpWhatsApp to enable sending.');}
+ $('reply').scrollIntoView({block:'center'});
+};
+</script>
+</body>
+</html>

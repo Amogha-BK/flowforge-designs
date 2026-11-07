@@ -1,0 +1,1 @@
+{"name":"flowforge-designs","version":"1.0.0","private":true,"scripts":{"dev":"node serve.mjs","start":"node serve.mjs","check":"node --check dist/app.js && node --check serve.mjs","test":"node verify.mjs"},"devDependencies":{"playwright":"1.65.0"}}
